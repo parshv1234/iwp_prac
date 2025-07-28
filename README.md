@@ -8,36 +8,46 @@
 
 ## 📝 Project Description
 
-This repository serves as my dedicated workspace and record-keeping for the **Internet & Web Programming (IWP) Practical** course at VIT Bhopal. Under the guidance of our faculty, **Dr. Sajjad Ahmed**, I am completing daily tasks and assignments related to web development.
+This repository serves as my dedicated workspace and record-keeping for the **Internet & Web Programming (IWP) Practical** course at VIT Bhopal. Under the guidance of our esteemed faculty, **Dr. Sajjad Ahmed**, I am completing daily tasks and assignments related to web development.
 
-Currently, this repository contains my progress in **HTML and CSS**, primarily following the learning modules and exercises provided by **W3Schools**. This setup allows me to:
+Currently, this repository primarily contains my progress in **HTML and CSS**, with exercises largely based on the learning modules and content from **W3Schools**. This setup allows me to:
 
-* Track my daily practical submissions.
+* Track my daily practical submissions efficiently.
 * Maintain an organized portfolio of my web development learning journey.
-* Reinforce concepts through hands-on coding.
+* Reinforce foundational concepts through hands-on coding.
 
-## 📂 Repository Structure (Current & Planned)
+---
 
-This repository will be organized to reflect the progression of topics and daily tasks assigned by Dr. Sajjad Ahmed.
+## 📂 Repository Structure
 
-* `html-css/`: Contains all my practical work related to HTML and CSS.
-    * `[topic_name]/`: Subfolders for specific HTML/CSS concepts (e.g., `forms`, `tables`, `flexbox`, `grid`).
-    * `day-X-task/`: Folders for daily assignments (e.g., `day-01-intro`, `day-02-forms`).
-* `javascript/` (Future)
-* `[other_web_technologies]/` (Future)
+This repository is organized to facilitate easy navigation through the various practical assignments and associated assets.
+
+* **HTML/CSS Labs (`.html` files directly in root):**
+    * `23bce10807_Lab1.html` through `23bce10807_Lab7.html`: These files represent my completed laboratory assignments, likely covering core HTML and CSS concepts.
+* **CSS Stylesheets (`.css` files in root):**
+    * `mystyle.css`, `mystyle1.css`, `mystyle2.css`: These are external stylesheets used by the various HTML labs for styling.
+* **Images & Assets (various locations):**
+    * `img_chania.jpg`, `frenchfood.jpg`, `klematis4_big.jpg`, `paper.gif`, `workplace.jpg`, `img_submit.gif`, `img_tree.png`: General image assets used across different labs.
+    * `htm/`:
+        * `croissant.htm`, `croissant.jpg`: Specific content and asset, possibly related to a particular assignment.
+    * `images/`:
+        * `img_girl.jpg`: Another dedicated image folder.
+* **Screenshots (`ss/`):**
+    * `ss/Screenshot*.png`: This folder contains screenshots, likely capturing the output or progress of different labs.
+* **Git Notes (`gitnotes/`):**
+    * `gitnotes/gitnotes.txt`: Personal notes related to Git usage or commands.
+* **Miscellaneous:**
+    * `currentdir.py`: A Python script, possibly for utility.
+    * `.gitignore`: Specifies intentionally untracked files to ignore.
+    * `.DS_Store`: macOS specific file, typically ignored.
+    * `.vscode/`: Configuration files for VS Code.
+    * `README.md`: This very file!
 
 ---
 
 ## ✨ Current Progress Highlights
 
-As of now, I have completed practical exercises covering foundational HTML and CSS concepts, largely based on W3Schools tutorials. This includes:
-
-* Basic HTML structure and elements
-* CSS styling (inline, internal, external)
-* Selectors, properties, and values
-* Box Model (margins, padding, borders)
-* Layout techniques (Flexbox, basic positioning)
-* [Add any other specific HTML/CSS topics you've covered, e.g., Forms, Tables, Responsive Design basics]
+As of now, I have completed practical exercises covering foundational HTML and CSS concepts, largely based on W3Schools tutorials and guided by Dr. Sajjad Ahmed's assignments. This includes work demonstrated in `Lab1.html` through `Lab7.html`, utilizing various internal and external CSS styles.
 
 ---
 
@@ -54,27 +64,21 @@ To view the HTML and CSS practicals locally:
     cd iwp_prac
     ```
 3.  **Open the files in your browser:**
-    Navigate into the `html-css/` directory and simply open any `.html` file with your web browser (e.g., double-click the file, or drag it into a browser tab).
+    Simply open any `.html` file (e.g., `23bce10807_Lab1.html`) directly from your file system with your preferred web browser. The associated CSS and images should load automatically if they are correctly linked within the HTML files.
 
 ---
 
-## 🎓 Learning Journey
+## 🎓 Learning Journey & Acknowledgement
 
-This repository is a testament to my commitment to learning and mastering web development. Every task assigned by Dr. Sajjad Ahmed and every concept explored through W3Schools contributes to building a solid foundation. I'm excited to continue this journey and delve deeper into more advanced web technologies.
+This repository is a testament to my commitment to learning and mastering web development fundamentals. Every task assigned by Dr. Sajjad Ahmed and every concept explored through W3Schools contributes to building a solid foundation. I'm excited to continue this journey and delve deeper into more advanced web technologies.
 
-A sincere thank you to **Dr. Sajjad Ahmed** for his clear instructions and guidance throughout this practical course.
-
----
-
-## 🤝 Contribution
-
-This repository is primarily for my personal learning and record-keeping. However, feedback or suggestions are always welcome!
+A sincere thank you to **Dr. Sajjad Ahmed** for his clear instructions and invaluable guidance throughout this practical course.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details (if you plan to add one, which is recommended).
+This project is licensed under the MIT License.
 
 ---
 
@@ -82,5 +86,5 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 **Parshv Modi**
 * GitHub: [@parshv1234](https://github.com/parshv1234)
-
+* Linkedin: [@parshv-modi](https://www.linkedin.com/in/parshv-modi/)
 ---
