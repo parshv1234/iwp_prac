@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <title>
+            Lab Practical 3
+        </title>
+    </head>
+<body>
+    <h1 style="color:rgb(34, 0, 255)">Name: Parshv Keyur Modi</h1>
+    <h2 style="color:rgb(34, 0, 255)">Reg no : 23BCE10807</h2>
+
+    <h2>An unordered HTML list</h2>
+    <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>  
+    <h2>An ordered HTML list</h2>
+    <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ol>  
+    <h2>A Description List</h2>
+    <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+    </dl>
+
+
+    <h2>HTML Forms</h2>
+    <fieldset>
+    <legend>Login:</legend>
+    <form action="/action_page.php" method="post" target="_blank" autocomplete="on">
+    <label for="email">Email ID:</label><br>
+    <input type="email" id="email" name="email" value="john@example.com" required><br>
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" value="Doe@123" required><br>
+    <label for="birthday">Birthday:</label><br>
+    <input type="date" id="birthday" name="birthday" required><br><br>
+    <input type="image" src="img_submit.gif" alt="Submit" width="40" height="40"><br>
+    <input type="submit" formtarget="_blank" formmethod="get" value="Submit using GET">
+    </fieldset>
+    </form> 
+    <p>If you click the "Submit" button, the form-data will be sent to a page but in here nothing will happen as it is pure frontend".</p>
+
+    <h2>Radio Buttons</h2>
+    <p>Choose your favorite Web language:</p>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+    <form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit">
+    </form> 
+
+    <h2>The select, selected and size elements</h2>
+    <p>The select element defines a drop-down list:</p>
+    <form action="/action_page.php" method="get">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" >
+        <!-- size="2" -->
+        <option value="volvo" selected>Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="hidden" id="cars" name="cars" value="2">
+      <input type="submit">
+    </form>
+
+    <h2>Allow Multiple Selections</h2>
+    <p>Use the multiple attribute to allow the user to select more than one value.</p>
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select><br><br>
+      <input type="submit">
+    </form>
+    <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field.</p>
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+      <br><br>
+      <input type="submit">
+      <input type="reset" value="Reset">
+    </form>
+
+    <h2>The button with single and multiple Element</h2>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile" multiple><br><br>  <!-- <Also uses multiple -->
+    <button type="button" onclick="alert('Do you want to upload this file?')">Upload</button>
+
+
+</body>
+</html>

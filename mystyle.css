@@ -1,0 +1,27 @@
+body{
+    background-image: url("img_tree.png");
+    /* background-color: lightblue; */
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    /* or
+    body {
+    background: #ffffff url("img_tree.png") no-repeat right top;
+    } for shorthand */
+}
+
+div{
+    background-image: url("paper.gif");
+    background-color: lightcoral;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+
+h2{
+    color: navy;
+  }
+
+li{
+    color: darkmagenta;
+}

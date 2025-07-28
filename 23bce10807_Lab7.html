@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+  <title>Lab 7 JavaScript Basics</title>
+  <style>
+    h1{
+    text-align: center;
+    background-color: burlywood;
+    color: white;
+    text-decoration-color: red;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;;
+}
+    body {
+        background-color: lightgrey;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+    }
+    button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    button:active {
+        background-color: #ccc; 
+    }
+  </style>
+</head>
+<body>
+    <h1>JavaScript Basics Lab 7</h1>
+    <h1>Student Details</h1>
+    <h1>Name: Parshv Keyur Modi</h1> 
+    <h1>Reg no : 23BCE10807</h2><br><br>
+    <button onclick="checkEvenOdd()">Check Even or Odd</button>
+    <button onclick="checkVoteEligibility()">Check Vote Eligibility</button>
+    <button onclick="sumFirstTenNaturalNumbers()">Sum First 10 Natural Numbers</button>
+    <button onclick="sumArrayElements()">Sum Array Elements</button>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+    <button onclick="sumFirstNNaturalNumbers()">Sum First N Natural Numbers</button>    
+
+  <script>
+    function checkEvenOdd() {
+      let numStr = prompt("Enter a number to check if it's even or odd:");
+      let num = parseInt(numStr); // Convert string input to an integer
+
+      // Check if the input is a valid number
+      if (isNaN(num)) {
+        console.log("Invalid input. Please enter a valid number.");
+        alert("Invalid input. Please enter a valid number."); // Using alert for user feedback
+        return;
+      }
+
+      if (num % 2 === 0) {
+        console.log(`${num} is an Even number.`);
+        alert(`${num} is an Even number.`);
+      } else {
+        console.log(`${num} is an Odd number.`);
+        alert(`${num} is an Odd number.`);
+      }
+    }
+
+
+    function checkVoteEligibility() {
+    let ageStr = prompt("Enter your age to check vote eligibility:");
+    let age = parseInt(ageStr); // Convert string input to an integer
+
+    // Check if the input is a valid number
+    if (isNaN(age) || age < 0) {
+        console.log("Invalid input. Please enter a valid positive age.");
+        alert("Invalid input. Please enter a valid positive age.");
+        return;
+    }
+
+    // Boundary conditions:
+    // Age 0-17: Not eligible
+    // Age 18: Eligible (boundary)
+    // Age > 18: Eligible
+    // Very old age (e.g., > 120): Still eligible, but might be a typo
+    if (age < 18) {
+        console.log(`You are ${age} years old. You are not eligible to vote yet.`);
+        alert(`You are ${age} years old. You are not eligible to vote yet.`);
+    } else if (age >= 18 && age < 120) { // Assuming a reasonable upper bound for age
+        console.log(`You are ${age} years old. You are eligible to vote.`);
+        alert(`You are ${age} years old. You are eligible to vote.`);
+    } else if (age >= 120) {
+        console.log(`You are ${age} years old. You are eligible to vote. (Remarkably old!)`);
+        alert(`You are ${age} years old. You are eligible to vote. (Remarkably old!)`);
+    }
+}
+
+// To run this program, call: checkVoteEligibility();
+
+function sumFirstTenNaturalNumbers() {
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum += i; // Add current number to sum
+    }
+    console.log(`The sum of the first 10 natural numbers is: ${sum}`);
+    alert(`The sum of the first 10 natural numbers is: ${sum}`);
+}
+
+// To run this program, call: sumFirstTenNaturalNumbers();
+
+function sumArrayElements() {
+    const numbers = [10, 20, 30, 40, 50]; // Predefined array
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i]; // Add each element to sum
+    }
+    console.log(`The sum of the array elements [${numbers.join(', ')}] is: ${sum}`);
+    alert(`The sum of the array elements [${numbers.join(', ')}] is: ${sum}`);
+}
+
+// To run this program, call: sumArrayElements();
+
+
+
+function checkPalindrome() {
+    let inputStr = prompt("Enter a word or phrase to check if it's a palindrome:");
+
+    // Handle empty or null input
+    if (inputStr === null || inputStr.trim() === "") {
+        console.log("No input provided. Please enter a word or phrase.");
+        alert("No input provided. Please enter a word or phrase.");
+        return;
+    }
+
+    // Convert to lowercase and remove non-alphanumeric characters
+    // This makes the palindrome check case-insensitive and ignores spaces/punctuation
+    const cleanedStr = inputStr.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    // Reverse the cleaned string
+    const reversedStr = cleanedStr.split('').reverse().join('');
+
+    if (cleanedStr === reversedStr) {
+        console.log(`'${inputStr}' is a palindrome!`);
+        alert(`'${inputStr}' is a palindrome!`);
+    } else {
+        console.log(`'${inputStr}' is NOT a palindrome.`);
+        alert(`'${inputStr}' is NOT a palindrome.`);
+    }
+}
+
+// To run this program, call: checkPalindrome();
+
+
+
+function sumFirstNNaturalNumbers() {
+    let nStr = prompt("Enter a positive integer N to calculate the sum of the first N natural numbers:");
+    let n = parseInt(nStr); // Convert string input to an integer
+
+    // Validate input
+    if (isNaN(n) || n <= 0) {
+        console.log("Invalid input. Please enter a positive integer for N.");
+        alert("Invalid input. Please enter a positive integer for N.");
+        return;
+    }
+
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i; // Add current number to sum
+    }
+
+    console.log(`The sum of the first ${n} natural numbers is: ${sum}`);
+    alert(`The sum of the first ${n} natural numbers is: ${sum}`);
+}
+
+// To run this program, call: sumFirstNNaturalNumbers();
+
+
+  </script>
+</body>
+</html>

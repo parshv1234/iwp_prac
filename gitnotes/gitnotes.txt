@@ -1,0 +1,74 @@
+Git Class Notes: Resolving Push Error – Remote Contains Work
+
+Scenario:
+You ran:
+
+git push -u origin main
+
+Error Output:
+
+To https://github.com/parshv1234/teachersdaychallenge.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/parshv1234/teachersdaychallenge.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+
+Why This Happens:
+This error occurs because the remote 'main' branch has commits that your local 'main' does not. Git blocks your push to prevent overwriting remote changes.
+
+Fix Steps:
+
+1. You tried pulling with rebase:
+
+git pull origin main --rebase
+
+2. Got this error:
+
+error: cannot pull with rebase: You have unstaged changes.
+error: please commit or stash them.
+
+3. To fix this, either:
+
+- Commit your changes:
+
+git add .
+git commit -m "WIP: save changes before rebase"
+git pull origin main --rebase
+
+- Or stash your changes:
+
+git stash
+git pull origin main --rebase
+git stash pop
+
+4. Finally, push your changes:
+
+git push -u origin main
+
+Optional: Force push (use carefully):
+
+git push -u origin main --force
+
+Warning: This overwrites remote history and can delete others' commits.
+
+Summary commands:
+
+Task                      Command
+------------------------  ------------------------------
+Check status              git status
+Commit changes            git add . && git commit -m "message"
+Stash changes             git stash
+Pull with rebase          git pull origin main --rebase
+Apply stashed changes     git stash pop
+Push changes              git push -u origin main
+Force push                git push -u origin main --force
+
+
+1. Increase Git buffer size (often fixes this):
+bash
+Copy
+Edit
+git config --global http.postBuffer 524288000
+This sets the buffer to 500MB.

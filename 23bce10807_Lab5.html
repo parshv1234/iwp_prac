@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Lab Practical 5
+    </title>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle1.css"> <!--uses external CSS-->
+</head>
+<body>
+    <h1 style="color:rgb(34, 0, 255)">Name: Parshv Keyur Modi</h1> <!-- uses inline CSS -->
+    <h1 style="color:rgb(34, 0, 255)">Reg no : 23BCE10807</h2><br><br>
+    <h2>The border-style Property</h2>
+    <p>This property specifies what kind of border to display:</p>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p><br><br>
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders:</p>
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <p class="three">Some text.</p>
+    <p class="four">Some text.</p>
+    <p class="five">Some text.</p>
+    <p class="six">Some text.</p>
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+    Always specify the "border-style" property to set the borders first.</p><br><br>
+    <h2>The border-color Property</h2>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+    <p class="seven">A solid multicolor border</p><br><br>
+    <p class="eight">2 different border styles.</p>
+    <h2>Individual Border Sides</h2>
+    <p class="f">4 different border styles.</p>
+    <p class="th">3 different border styles.</p>
+    <p class="t">2 different border styles.</p>
+    <p class="o">1 border style.</p><br><br>
+    <h2>The border-left Property</h2>
+    <p class="left">This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p><br><br>
+    <h2>The border-radius Property</h2>
+    <p>This property is used to add rounded borders to an element:</p>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p><br><br>
+    <h2>Using individual margin properties</h2>
+    <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div><br>
+    <h2>The margin shorthand property - 3 values</h2>
+    <p class="div1">This div element has a top margin of 25px, a right and left margin of 50px, and a bottom margin of 75px.</p><br>
+    <h2>The margin shorthand property - 2 values</h2>
+    <p class="div2">This div element has a top and bottom margin of 25px, and a right and left margin of 50px.</p>
+    <hr><br>
+    <p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2><hr>
+    <h2>Padding and element width - with box-sizing</h2>
+    <div class="ex1">This div is 300px wide.</div>
+    <br>
+    <div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+    <br>
+    <div class="ex3">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.</div>
+    <hr>
+    <h2>Set the height and width of an element</h2>
+    <div class="ex4">This div element has a height of 100px and a width of 500px.</div>
+    <br>
+    <h2>Set the max-width of an element</h2>
+    <div class="ex5">This div element has a height of 100px and a max-width of 500px.</div>
+    <p>Resize the browser window to see the effect.</p>
+    <hr>
+    <h2>Calculate the total width:</h2>
+    <img src="klematis4_big.jpg" width="350" height="263" alt="Klematis">
+    <div class="ex6">The picture above is 350px wide. The total width of this element is also 350px. The total height of this element is 80px.</div>
+    <br>
+    <hr>
+    <div class="w3-leftbar w3-border w3-padding w3-theme-border">
+        &nbsp;&nbsp;320px (width of content area)<br>
+        + 20px (left padding + right padding)<br>
+        + 10px (left border + right border)<br>
+        <strong>= 350px (total width)</strong>
+        <br><br>
+        &nbsp;&nbsp;50px (height of content area)<br>
+        + 20px (top padding + bottom padding)<br>
+        + 10px (top border + bottom border)<br>
+        <strong>= 80px (total height)</strong></div>
+</body>
+</html>

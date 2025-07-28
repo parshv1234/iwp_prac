@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+    <link rel="stylesheet" type="text/css" href="mystyle.css"> <!--uses external CSS-->
+    <title>
+        Lab Practical 4
+    </title>
+    <style>
+        /* * {
+        text-align: center;
+        color: blue;
+        } 
+        <p>Every element on the page will be affected by the style.</p> */
+        #para1 {
+        text-align: center;
+        color: blue;
+        }
+        h2 {
+        text-align: center;
+        color: red;
+        }
+        p {
+          color: red;
+          text-align: center;
+        } 
+        /* h2, p {
+        text-align: center;
+        color: red;
+        } 
+        we have grouped the selectors */
+        p.center {
+        text-align: center;
+        color: green;
+        }
+        p.large {
+        font-size: 300%;
+        }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css">  -->
+     <!--if this is uncommented then the internal style is 
+     defined after the link to the external style sheet, the <h2> elements will be "navy" or else internal gets followed. --> 
+    </head>
+<body>
+    <h1 style="color:rgb(34, 0, 255)">Name: Parshv Keyur Modi</h1> <!-- uses inline CSS -->
+    <h1>Name: Parshv Keyur Modi</h1>
+    <h2 class="center">Reg no : 23BCE10807</h2><br><br>
+    <p id="para1">Hello World!</p>
+    <p class="center">These paragraphs are styled with CSS.</p>
+    <p> Red and center-aligned heading</p><br>
+    <h1 class="center" style="background-color:DodgerBlue;">This heading will not be affected</h1>
+    <p class="center">This paragraph will be red and center-aligned.</p> 
+    <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+    <p style="color: brown; text-align: left; border:5px solid Violet;">The styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority: </p> <br><br>
+    <ul>
+    <li> Inline style (inside an HTML element)</li>
+    <li> External and internal style sheets (in the head section)</li>
+    <li> Browser default</li>
+    </ul><br><br>
+
+    <div>
+        <h1>opacity 0.5 with border and bg color</h1>
+    </div><br><br>
+
+    <p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+    <p>The background-image is fixed. Try to scroll down the page.</p>
+
+</body>
+</html>
+        

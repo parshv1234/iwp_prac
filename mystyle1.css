@@ -1,0 +1,156 @@
+p.eight{
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+  /* Four values */
+  p.f {
+    border-style: dotted solid double dashed;
+  }
+  /* Three values */
+  p.th {
+    border-style: dotted solid double;
+  }
+  /* Two values */
+  p.t {
+    border-style: dotted solid;
+  }
+  /* One value */
+  p.o {
+    border-style: dotted;
+  }
+  p.dotted {border-style: dotted; border-width: 10px; border-color: forestgreen;}
+  p.dashed {border-style: dashed; border-width: 10px; border-color: forestgreen; }
+  p.solid {border-style: solid; border-width: 10px; border-color: forestgreen;}
+  p.double {border-style: double; border-width: 10px; border-color: forestgreen;}
+  p.groove {border-style: groove; border-width: 10px; border-color: forestgreen;}
+  p.ridge {border-style: ridge; border-width: 10px; border-color: forestgreen;}
+  p.inset {border-style: inset; border-width: 10px; border-color: forestgreen;}
+  p.outset {border-style: outset; border-width: 10px; border-color: forestgreen;}
+  p.none {border-style: none; border-width: 10px; border-color: forestgreen;}
+  p.hidden {border-style: hidden; border-width: 10px; border-color: forestgreen;}
+  p.mix {border-style: dotted dashed solid double; border-width: 10px; border-color: forestgreen;}
+  p.one {
+    border-style: solid;
+    border-width: 5px;
+  }
+  p.two {
+    border-style: solid;
+    border-width: medium;
+  }
+  p.three {
+    border-style: dotted;
+    border-width: 2px;
+  }
+  p.four {
+    border-style: dotted;
+    border-width: thick;
+  }
+  p.five {
+    border-style: double;
+    border-width: 15px;
+  }
+  p.six {
+    border-style: double;
+    border-width: thick;
+  }
+  p.seven {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+  }
+  p.left{
+      border-left: 6px solid red;
+      margin: inherit;
+  }
+  p.normal {
+    border: 2px solid red;
+    padding: 5px;
+  }
+  p.round1 {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  p.round2 {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  p.round3 {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+  }
+  div {
+    border: 1px solid black;
+    /* margin: 25px 50px 75px 100px; or you can simple use margin shorthand with 4,3,2 or 1 values.*/
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; */
+    padding: 25px 50px 75px 100px;
+    margin: auto;
+    background-color: lightblue;
+  }
+  p.div1 {
+    border: 1px solid black;
+    margin: 25px 50px 75px;
+    background-color: lightblue;
+  }
+  p.div2 {
+    border: 1px solid black;
+    margin: 25px 50px;
+    background-color: lightblue;
+  }
+  h1 {
+    margin: 0 0 50px 0;
+  }
+  h2 {
+    margin: 20px 0 0 0;
+  }
+  div.ex1 {
+    width: 300px;
+    background-color: yellow;
+  }
+  div.ex2 {
+    width: 300px;
+    padding: 25px;
+    background-color: lightblue;
+  }
+  div.ex3 {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: lightblue;
+  }
+  div.ex4 {
+    height: 100px;
+    width: 500px;
+    background-color: powderblue;
+  }
+  div.ex5 {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+  }
+  div.ex6 {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+.w3-theme-border {
+    border-color: #04AA6D !important;
+}
+.w3-padding {
+    padding: 8px 16px !important;
+}
+.w3-border {
+    border: 1px solid #ccc !important;
+}
+.w3-leftbar {
+    border-left: 6px solid #ccc !important;
+}
