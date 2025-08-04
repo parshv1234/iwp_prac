@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🗓️ Community Event Planner</h1>
+    </header>
+
+    <main>
+        <section class="container" id="countdown-section">
+            <h2>Next Event In:</h2>
+            <div id="countdown-timer">--:--:--</div>
+        </section>
+
+        <section class="container" id="form-section">
+            <h2>Add a New Event</h2>
+            <form id="event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" required>
+
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required>
+
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" required>
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" rows="3"></textarea>
+                
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+
+        <section class="container" id="events-container">
+            <h2>Upcoming Events</h2>
+            <div id="event-list">
+                <p>No events added yet. Use the form to add one!</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

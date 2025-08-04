@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="registrationForm" novalidate>
+            <h1>Student Registration</h1>
+            
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other" required>
+                    <label for="other">Other</label>
+                </div>
+                <small class="error-message"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Course Selection</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select a Course--</option>
+                    <option value="Internet and Web Programming">Internet and Web Programming</option>
+                    <option value="AWS">AWS</option>
+                    <option value="Theory of Computation">Theory of Computation</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Java Programming">Java Programming</option>
+                </select>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Skills</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="cpp" name="skills" value="C++">
+                    <label for="cpp">C++</label>
+                </div>
+                 <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small>Min 8 chars: 1 uppercase, 1 lowercase, 1 number, 1 symbol.</small>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group-btns">
+                <button type="submit" class="btn submit-btn">Register</button>
+                <button type="reset" class="btn reset-btn">Reset</button>
+            </div>
+
+            <div id="successMessage" class="success-message"></div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
