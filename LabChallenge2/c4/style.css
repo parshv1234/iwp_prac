@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #f7c566;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 20px; 
+    margin: 0 auto 30px auto;
+    max-width: 1000px;
+    padding: 15px;
+    background-color: #2a2a4e;
+    border-radius: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, minmax(0, 1fr));
+    gap: 5px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.element {
+    position: relative;
+    padding: 5px;
+    border: 1px solid #4a4a6a;
+    border-radius: 5px;
+    background-color: #1e1e3f;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    min-height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(247, 197, 102, 0.5);
+    z-index: 10;
+}
+
+.element .number {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 0.7em;
+    color: #a0a0c0;
+}
+
+.element .symbol {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.element .name {
+    font-size: 0.7em;
+    color: #c0c0e0;
+    margin-top: 2px;
+}
+
+
+.alkali-metal { background-color: #e85d4f; }
+.alkaline-earth-metal { background-color: #f7c566; }
+.lanthanide { background-color: #f28b61; }
+.actinide { background-color: #d17b88; }
+.transition-metal { background-color: #6a8dcd; }
+.post-transition-metal { background-color: #66cdaa; }
+.metalloid { background-color: #8a6acd; }
+.reactive-nonmetal { background-color: #4dbf99; }
+.noble-gas { background-color: #4a6a8a; }
+.unknown { background-color: #555; }
+
+
+#element-details-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    max-width: 500px;
+    background: #2a2a4e;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+#element-details-panel:not(.hidden) {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#details-content h2 {
+    color: #f7c566;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#details-content p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+#details-content strong {
+    color: #66cdaa;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .element .symbol { font-size: 1.2em; }
+    .element .name { font-size: 0.6em; }
+    .element { min-height: 70px; }
+}
+
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    #periodic-table { gap: 3px; }
+    .element .symbol { font-size: 1em; }
+    .element .name { display: none; } 
+    .element { min-height: 50px; padding: 2px; }
+    .element .number { font-size: 0.6em; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.5em; }
+    .element { min-height: 40px; }
+    #periodic-table { gap: 2px; }
+}

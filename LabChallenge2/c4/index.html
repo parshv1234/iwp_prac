@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="periodic-table-container">
+        <h1>Periodic Table of Elements</h1>
+        <div id="legend">
+            <h4>Legend:</h4>
+            <div class="legend-item"><span class="color-box alkali-metal"></span>Alkali Metal</div>
+            <div class="legend-item"><span class="color-box alkaline-earth-metal"></span>Alkaline Earth Metal</div>
+            <div class="legend-item"><span class="color-box lanthanide"></span>Lanthanide</div>
+            <div class="legend-item"><span class="color-box actinide"></span>Actinide</div>
+            <div class="legend-item"><span class="color-box transition-metal"></span>Transition Metal</div>
+            <div class="legend-item"><span class="color-box post-transition-metal"></span>Post-Transition Metal</div>
+            <div class="legend-item"><span class="color-box metalloid"></span>Metalloid</div>
+            <div class="legend-item"><span class="color-box reactive-nonmetal"></span>Reactive Nonmetal</div>
+            <div class="legend-item"><span class="color-box noble-gas"></span>Noble Gas</div>
+            <div class="legend-item"><span class="color-box unknown"></span>Unknown</div>
+        </div>
+        <div id="periodic-table">
+            </div>
+
+    </div>
+
+    <div id="element-details-panel" class="hidden">
+        <button id="close-btn">&times;</button>
+        <div id="details-content">
+            </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
