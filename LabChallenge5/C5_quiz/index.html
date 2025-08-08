@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <h1>Welcome to the Web Technologies Quiz!</h1>
+        <p>You will have 60 seconds to answer all the questions.</p>
+        <button id="start-btn">Start Quiz</button>
+        <footer style="margin-top: 2.5rem; font-size: 0.9rem; color: #7f8c8d;">
+            <p>&copy; 2025 Parshv Keyur Modi</p>
+        </footer>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div id="timer">Time Left: 01:00</div>
+            <div id="question-counter"></div>
+        </div>
+
+        <form id="quiz-form">
+        </form>
+
+        <div class="quiz-navigation">
+            <button id="prev-btn">Previous</button>
+            <button id="clear-btn">Clear Response</button>
+            <button id="next-btn">Next</button>
+            <button id="submit-quiz-btn">Submit Quiz</button>
+        </div>
+    </div>
+
+    <div id="score-modal-overlay">
+        <div id="score-modal">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <p id="time-taken"></p>
+            <div class="modal-buttons">
+                <button id="view-scorecard-btn">View Answers</button>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="confirm-modal-overlay">
+        <div id="confirm-modal">
+            <h2>Are you sure?</h2>
+            <p>Do you want to submit the quiz?</p>
+            <div class="modal-buttons">
+                <button id="cancel-submit-btn">Cancel</button>
+                <button id="confirm-submit-btn">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
