@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Username Form</title>
+</head>
+<body>
+    <label for="username">Username: </label>
+    <input type="text" id="username">
+    <button id="checkButton" onclick="checkUsername()">Submit</button>
+
+    <script>
+        function checkUsername() {
+            var username = document.getElementById("username").value;
+
+            if (username === "") {
+                alert("Please enter your username.");
+            } else {
+                alert("Welcome, " + username + "!");
+
+            }
+        }
+    </script>
+</body>
+</html>

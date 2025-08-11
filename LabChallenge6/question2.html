@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Toggle Visibility</title>
+</head>
+<body>
+    <p id="infoText">This toggle button was created by 23BCE10807.</p> 
+    <button id="toggleBtn" onclick="toggleVisibility()">Hide</button>
+
+    <script>
+        function toggleVisibility() {
+            var paragraph = document.getElementById("infoText");
+            var button = document.getElementById("toggleBtn");
+
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+                button.innerHTML = "Hide";
+            } else {
+                paragraph.style.display = "none";
+                button.innerHTML = "Show";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="title">Old Title</h1>
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <div class="highlight">This is highlighted.</div>
+    <div class="highlight">This is also highlighted.</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+        document.getElementById("title").innerText = "Javascript DOM Example";
+        console.log("Title changed to: ", document.getElementById("title").innerText);
+
+        // const newItem = document.createElement('li');
+        // newItem.innerText = "Item added by JavaScript";
+        // document.getElementById('itemlist').appendChild(newItem);
+        // console.log("New item added to the list: ", newItem.innerText);
+        const itemList = document.getElementById('itemList');
+        var newItem = document.createElement('li');
+        newItem.innerText = "New Item";
+        itemList.appendChild(newItem);
+        console.log("New item added:", newItem.innerText);
+
+        const highlightedElements = document.querySelectorAll('.highlight');
+        highlightedElements.forEach(function(element) {
+            element.style.backgroundColor = "yellow";
+            console.log('Element ${index + 1} background color changed to yellow'); 
+        });
+    });
+    </script>
+</body>
+</html>
