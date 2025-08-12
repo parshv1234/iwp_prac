@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parshv Modi | Resume</title>
+    <link id="theme-style" rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <button id="theme-switcher" class="theme-btn">Switch Theme 🎨</button>
+
+    <div class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Parshv Keyur Modi</h1>
+                <p class="job-title">Aspiring Machine Learning Engineer</p>
+            </div>
+            <div class="contact-info">
+                <p>🌐 linkedin.com/in/parshvmodi</p> <p>✉️ parshv.modi2023@vitbhopal.ac.in</p> <p>📍 Bhopal, Madhya Pradesh</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2 class="section-title">Summary</h2>
+                <p>Detail-oriented and motivated 3rd-year B.Tech CSE student at VIT Bhopal University with a strong academic record (CGPA: 8.26). Passionate about Machine Learning and its applications in Computer Vision. Proficient in Python and its associated frameworks like Flask and FastAPI. Eagerly seeking a challenging internship to apply my skills in a real-world environment and contribute to innovative ML projects.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Projects & Leadership</h2>
+                <div class="job">
+                    <h3 class="job-role">Automated Event Management & Ticketing System</h3>
+                    <p class="job-company-date">Club Event (Event Co-Coordinator) | 2024</p>
+                    <ul>
+                        <li>**Reduced manual processing time by over 95%** for a 4000-student event by **engineering an automated Python script** that integrated Google Sheets API, generated unique QR codes, and distributed tickets via email.</li>
+                        <li>Pioneered this high-impact solution as Event Co-Coordinator, establishing a new operational standard for large-scale events within university clubs.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3 class="job-role">Digital Health Management System (DHMS)</h3>
+                    <p class="job-company-date">Full-Stack Project</p>
+                    <ul>
+                        <li>**Enabled secure and organized data management** for a digital health system by **building a RESTful backend API with Flask** and utilizing a robust PostgreSQL database for data integrity.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3 class="job-role">Student Performance Prediction Model</h3>
+                    <p class="job-company-date">Machine Learning Project</p>
+                    <ul>
+                        <li>**Achieved 85% predictive accuracy** in forecasting student end-of-semester GPAs by **building a machine learning regression model** that analyzed key academic indicators like midterm scores.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3 class="job-role">Credit Card Approval Prediction Model</h3>
+                    <p class="job-company-date">Machine Learning Project</p>
+                    <ul>
+                        <li>**Improved prediction accuracy by 15%** over a baseline model by **developing and tuning a machine learning classifier** that analyzed applicant data to identify influential risk factors.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>FastAPI</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Git & GitHub</li>
+                    <li>Google Sheets API</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Technology, CSE (Core)</h3>
+                    <p class="job-company-date">VIT Bhopal University | 2023 - 2027 (Expected)</p>
+                    <p><strong>Current CGPA:</strong> 8.26 / 10.0</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© Parshv Modi - 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        const themeSwitcher = document.getElementById('theme-switcher');
+        const stylesheet = document.getElementById('theme-style');
+
+        themeSwitcher.addEventListener('click', () => {
+            if (stylesheet.getAttribute('href') === 'style1.css') {
+                stylesheet.setAttribute('href', 'style2.css');
+            } else {
+                stylesheet.setAttribute('href', 'style1.css');
+            }
+        });
+    </script>
+
+</body>
+</html>

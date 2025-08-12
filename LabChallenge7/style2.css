@@ -1,0 +1,131 @@
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    background-color: #fdf6e3; 
+    color: #583e2e;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 5px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #004e64; 
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px double #e0e0e0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    color: #004e64; 
+    margin: 0;
+}
+
+.job-title {
+    color: #007a7a; 
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 700;
+    margin: 0;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.95rem;
+    color: #555;
+}
+.contact-info p {
+    margin: 0.25rem 0;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #004e64;
+    border-bottom: 1px solid #007a7a;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-role {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.job-company-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: transparent;
+    color: #007a7a;
+    border: 1px solid #cce5e5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004e64; 
+    color: #fdf6e3; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    background-color: #007a7a;
+    transform: translateY(-2px);
+}
