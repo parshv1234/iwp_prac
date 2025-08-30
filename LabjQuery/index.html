@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Lab Exercise</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 20px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+            // Task 1: Change paragraph color on page load
+            $("p").css("color", "blue");
+            
+            // Task 2: Event Handling for Hide/Show buttons
+            $("#hideBtn").click(function(){
+                $("p").hide();
+            });
+            
+            $("#showBtn").click(function(){
+                $("p").show();
+            });
+            
+            // Task 3: Toggle and Animate
+            $("#toggleBtn").click(function(){
+                $("#box").fadeToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h1>My jQuery Lab</h1>
+    <p>This is a paragraph that will change color using jQuery.</p>
+    
+    <hr>
+    
+    <h3>Task 2: Hide and Show Paragraph</h3>
+    <button id="hideBtn">Hide Paragraph</button>
+    <button id="showBtn">Show Paragraph</button>
+    
+    <hr>
+    
+    <h3>Task 3: Toggle and Animate</h3>
+    <button id="toggleBtn">Toggle Box</button>
+    <div id="box"></div>
+
+</body>
+</html>
